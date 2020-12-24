@@ -34,7 +34,7 @@ public class LoginActivity extends BaseActivity {
 
 private EditText phoneNumber;
     private Button loginButton;
-    private Spinner dropdown ;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,15 +44,14 @@ private EditText phoneNumber;
         actionBar.setIcon(R.mipmap.ic_launcher);
          EditText phoneNumber = findViewById(R.id.phone);
 
-        dropdown = findViewById(R.id.spinn_Zone);
+
 
          Button loginButton = findViewById(R.id.login);
 
         String[] Zones = new String[]{"Select Zone", "A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Zones);
-        dropdown.setAdapter(adapter);
+
 
     }
 

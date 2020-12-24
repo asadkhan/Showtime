@@ -1,59 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
     >
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginBottom="64dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="16dp"
-        android:background="#282226"
-        android:backgroundTint="#282226"
-        android:bottomRightRadius="10dp"
-        android:bottomLeftRadius="10dp"
-        android:topLeftRadius="10dp"
-        android:topRightRadius="10dp"
-        
-        android:enabled="true"
-        android:text="@string/action_sign_in"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinn_Zone"
-        app:layout_constraintVertical_bias="0.2" />
-
-    <Spinner
-        android:id="@+id/spinn_Zone"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:spinnerMode="dropdown"
-        android:hint="@string/prompt_zone"
-
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone" />
 
     <EditText
         android:id="@+id/phone"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
@@ -61,9 +15,399 @@
         android:hint="@string/prompt_phone"
         android:inputType="phone"
         android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
+        android:background="#282226"
+        android:backgroundTint="#282226"
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:enabled="true"
+        android:text="@string/action_sign_in"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Assigned Zone(s): "
+        android:textColor="#f00"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <ScrollView
+        android:id="@+id/linearChk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+
+        >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+       >
+
+
+    <CheckBox
+        android:id="@+id/chkA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:checked="false"
+        android:padding="20dp"
+        android:text="A"
+        android:textColor="#282226"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+
+        />
+
+        <CheckBox
+            android:id="@+id/chkB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="B"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+
+        <CheckBox
+            android:id="@+id/chkC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="C"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+
+        <CheckBox
+            android:id="@+id/chkD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="D"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="E"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="F"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="G"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="H"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="I"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="J"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="K"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="L"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="M"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="N"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="O"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="P"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="Q"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="R"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="S"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="T"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="U"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="V"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="W"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="X"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="Y"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+        <CheckBox
+            android:id="@+id/chkZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="Z"
+            android:textColor="#282226"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout >

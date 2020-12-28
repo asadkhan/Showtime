@@ -27,9 +27,6 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
-        setContentView(R.layout.receipt_form);
-=======
         setContentView(R.layout.activity_dashboard);
 
 
@@ -177,6 +174,6 @@ public class MainActivity extends BaseActivity {
             default:
                 super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         }
->>>>>>> 4c99760da1362e0361e688e01ddb9b2c4c6f413e
+
     }
 }

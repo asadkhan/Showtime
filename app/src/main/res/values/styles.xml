@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="underline" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/logo_red</item>
+        <item name="colorControlNormal">@color/light_grey</item>
+    </style>
+</resources>
